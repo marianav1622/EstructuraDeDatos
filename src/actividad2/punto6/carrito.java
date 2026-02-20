@@ -12,8 +12,6 @@ private List<producto> listaProductos = new ArrayList<>();
             System.out.println("El producto ya existe en el carrito.");
         }
     }
-
-    
     public void eliminarProducto(producto p) {
         if (listaProductos.remove(p)) {
             System.out.println("Eliminado: " + p);
@@ -23,9 +21,7 @@ private List<producto> listaProductos = new ArrayList<>();
     }
 
     public void mostrarCarrito() {
-        System.out.println("--- Contenido del Carrito (" + listaProductos.size() + " items) ---");
+        System.out.println("--- Contenido del Carrito (" + listaProductos.size() + " items)");
         listaProductos.forEach(System.out::println);
     }
-}
-    
 }

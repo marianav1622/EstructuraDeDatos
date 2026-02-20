@@ -1,7 +1,7 @@
-public interface InerIplaylist {
-void agregarCancion(cancion c);
+public interface Iplaylist {
+void agregarCancion(Cancion c);
     void eliminarCancion(String titulo);
-    cancion reproduccionSiguiente();
+    Cancion reproduccionSiguiente();
     void vaciarLista();
     int obtenerCantidadCancion();    
 }
