@@ -11,23 +11,19 @@ public class Producto {
         this.nombre = nombre;
         this.precio = precio;
     }
-
-    // Getters y Setters...
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Producto producto = (Producto) o;
-        return id == producto.id; // Comparamos por ID único
+        return id == producto.id; 
     }
 
-    @Override
+    
     public int hashCode() {
         return Objects.hash(id);
     }
 
-    @Override
+   
     public String toString() {
         return String.format("[%d] %s - $%.2f", id, nombre, precio);
     }
