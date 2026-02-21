@@ -5,7 +5,7 @@ public class carrito {
 private List<producto> listaProductos = new ArrayList<>();
 
     public void agregarProducto(producto p) {
-        if (!listaProductos.contains(p)) {
+        if (listaProductos.contains(p)) {
             listaProductos.add(p);
             System.out.println("Agregado: " + p);
         } else {
