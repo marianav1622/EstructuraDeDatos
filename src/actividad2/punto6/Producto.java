@@ -11,6 +11,11 @@ public class Producto {
         this.nombre = nombre;
         this.precio = precio;
     }
+
+    public int getId() { return id; }
+    public String getNombre() { return nombre; }
+
+   
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -18,13 +23,12 @@ public class Producto {
         return id == producto.id; 
     }
 
-    
     public int hashCode() {
         return Objects.hash(id);
     }
 
-   
+
     public String toString() {
-        return String.format("[%d] %s - $%.2f", id, nombre, precio);
+        return String.format("ID: %d | %-15s | Precio: $%.2f", id, nombre, precio);
     }
 }

@@ -8,7 +8,7 @@ public class Main {
         
         miCarrito.agregarProducto(p1);
         miCarrito.agregarProducto(p2);
-        miCarrito.agregarProducto(p1); // Intentar duplicado
+        miCarrito.agregarProducto(p1); 
         
         miCarrito.mostrarCarrito();
     }
