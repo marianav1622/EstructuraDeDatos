@@ -7,15 +7,15 @@ public class GestionAlmacen {
         Map<String, String> inventario = new HashMap<>();
 
         
-        inventario.put("A001", "tv");
-        inventario.put("B002", "cpu");
+        inventario.put("A001", "Laptop Dell");
+        inventario.put("B002", "Televisor Sony");
         inventario.put("C003", "Teclado");
 
         System.out.println("--- Estado Inicial ---");
         System.out.println("Inventario: " + inventario);
 
     
-        inventario.put("A001", "tv");
+        inventario.put("A001", "Laptop Dell PH");
 
         System.out.println(" Verificación de Unicidad ");
         String valorActual = inventario.get("A001");
