@@ -14,7 +14,7 @@ public class GestionInventario {
         System.out.println("Inventario inicial: " + inventario);
 
         // 3. Colisión/Actualización: Insertar misma clave con distinto valor
-        System.out.println("\n--- Intentando duplicar clave 'A001' ---");
+        System.out.println(" Intentando duplicar clave 'A001' ");
         inventario.put("A001", "Laptop HP"); 
 
         // 4. Verificación de Unicidad
@@ -22,7 +22,7 @@ public class GestionInventario {
         System.out.println("Valor actual de A001: " + inventario.get("A001"));
         
         // 5. Búsqueda Rápida
-        System.out.println("\n--- Demostración de Búsqueda ---");
+        System.out.println(" Demostración de Búsqueda ");
         
         // Producto existente
         String producto = inventario.get("B020");
