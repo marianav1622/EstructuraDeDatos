@@ -5,11 +5,23 @@ public class vector{
    public static void main(String[]args){
 
         Vector<String> logTransacciones = new Vector<>();
+        /* Operaciones de añadir logs */
         logTransacciones.add("pago");
         logTransacciones.add("Deposito");
         logTransacciones.add("Retiro");
         logTransacciones.add("trasaccion");
         logTransacciones.add("abono");
+
+        /* 
+         * 4. ANÁLISIS DE CÓDIGO (Sincronización):
+         * La clase Vector es considerada "Thread-Safe" Internamente casi todos sus 
+         * métodos como add, get, remove incluyen la palabra clave synchronized.
+         *
+         * entonces 
+         * si dos hilos intentan escribir en el log al mismo tiempo Java bloquea 
+         * el objeto para el primer hilo y obliga al segundo a esperar (Monitor Lock). 
+         * Esto evita la corrupción de datos pero genera un "overhead" o cuello de botella.
+         */
         //**los métodos de Vector son synchronized, lo que bloquea el objeto para otros hilos mientras uno lo usa esto garantiza que solo un hilo pueda acceder al Vector a la vez */
         int unMillon = 1000000;
 
