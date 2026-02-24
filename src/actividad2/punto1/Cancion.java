@@ -1,4 +1,5 @@
 public class Cancion {
+    /*Representa una canción en el sistema. */
     private String titulo;
     private double duracion;
 
