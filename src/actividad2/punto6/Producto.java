@@ -15,7 +15,7 @@ public class Producto {
     public int getId() { return id; }
     public String getNombre() { return nombre; }
 
-   
+   /*obreescritura de equals para comparar por ID */
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
