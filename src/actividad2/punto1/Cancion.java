@@ -13,7 +13,7 @@ public class Cancion {
 
     
     public String toString() {
-        return "🎶 " + titulo + " (" + duracion + " min)";
+        return "" + titulo + " (" + duracion + " min)";
     }
 }
 
