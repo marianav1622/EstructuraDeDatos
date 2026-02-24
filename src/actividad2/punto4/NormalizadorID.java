@@ -2,8 +2,11 @@ package actividad2.punto4;
 
 public class NormalizadorID {
     public static void main(String[]args){
+        /*Entrada: String original con espacios y minúsculas*/
         String idSucio = " User_123 ";
+    /*Transformación: Se generan nuevos objetos en cada paso */ 
          String idLimpio = idSucio.trim().toUpperCase().substring(0, 8);
+         /*Demostración de Identidad (Inmutabilidad) */
     System.out.println("--- Prueba de Inmutabilidad ---");
         System.out.println("ID Original: '" + idSucio + "' | ID Hash: " + System.identityHashCode(idSucio));
         System.out.println("ID Limpio:   '" + idLimpio + "' | ID Hash: " + System.identityHashCode(idLimpio));
